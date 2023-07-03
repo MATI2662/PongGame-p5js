@@ -1,7 +1,3 @@
-//at start or when ball is reset, ball should start moving after a delay
-//when score is equal to 5, game should end
-//when game ends, display winner and reset score
-
 let ball;
 let rightPaddle;
 let leftPaddle;
@@ -142,7 +138,6 @@ function drawBall(ball) {
 }
 
 function updateBall(ball) {
-
   //move ball
   ball.x += ball.velocityX;
   ball.y += ball.velocityY;
@@ -211,7 +206,6 @@ function updateScore() {
     LPoints++;
   }
 
-  //check if score is 5
   chceckScore();
 }
 
